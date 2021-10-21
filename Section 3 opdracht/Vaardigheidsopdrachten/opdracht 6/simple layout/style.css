@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  color: rgb(37, 161, 37);
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.main-text {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.naam-tijger {
+  font-size: 22px;
+  float: left;
+  margin-top: 30px;
+}
+
+.contrainer {
+  width: 1140px;
+  /* margin: top right bottom left */
+  margin: 20px auto 0 auto;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.blog-post {
+  /* background-color: #00f; */
+  width: 75%;
+  float: left;
+  padding-right: 30px;
+  position: relative;
+}
+.other-posts {
+  /* background-color: #0f0; */
+  width: 25%;
+  float: left;
+}
+.info-tijger {
+  /* background-color: #ffff00; */
+  padding: 20px;
+  border-top: 1px solid rgb(161, 9, 9);
+}
+.info-tijger img {
+  height: 100px;
+  width: 100px;
+  /* border wordt een rondtje */
+  border-radius: 50%;
+  float: center;
+}
+.other {
+  margin: 40px;
+}
+
+.blog-post img {
+  height: 150px;
+  width: auto;
+}
+.datum {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}

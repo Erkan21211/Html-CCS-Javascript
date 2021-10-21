@@ -1,0 +1,45 @@
+Classes and ID's:
+
+<p class="main-text">
+<p id="author-text">
+
+css:
+
+//class
+.main-text {
+	text-align: justify;
+	
+}
+// ID class
+#author-text {
+	font-size: 22px;
+}
+
+--------------------------------------------
+
+The CSS BOX MODEL:
+
+Content: text, images. etc.
+padding: transparent area around the content, inside of the box.
+Border: goes around the padding and the content.
+Margin: space between boxes.
+
+Block elements > used the full width of the browser.
+Inline elements > you can either set their height or their width
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+-------------------------------------------------------------------
+
+Relative vs. Absolute
+
+.date {
+	position: absolute;
+	top: 10px;
+	right 30px;
+
+}

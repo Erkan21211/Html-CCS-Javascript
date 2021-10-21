@@ -1,0 +1,59 @@
+4: 
+Welke code hoort bij de rode box (met daarin “Content 1”) en welke code hoort bij de blauwebox (met daarin “Content 2”).
+
+Content 1 hoort bij A (rood)
+Content 2 hoort bij B (blauw)
+
+5:
+Welke code hoort bij welk resultaat?:
+
+
+      div:first-of-type {
+        border: 3px solid red;
+        padding: 1rem;
+      }
+      div:last-of-type {
+        margin: 0;
+        border: 3px solid blue;
+        padding: 1rem;
+      }
+
+6:
+Hoe maak ik een dollar-teken in HTML met HTML-entities?
+
+HTML ENTITY. &dollar;
+
+7:
+In onderstaande code krijgen zowel het laatste “div-element” als het laatste “h2-element” een
+rode lijn van 100px breed en 3px hoog. Toch is het resultaat anders (zie hieronder). Verklaar
+het resultaat.
+
+Dit komt door de; h2:last-of-type::after <---- De after geeft spaces er tussen in.
+
+
+
+8.
+
+Wat doet de “@import”-regel in CSS? Bedenk een toepassing voor je eigen stylesheets (dus
+geen externe stylesheets).
+
+Met de @import regel kan je een stylesheet in een andere stylesheet importeren.
+
+@import "style.css";
+
+
+9:
+Testen van je programmeerwerk kan als je denkt klaar te zijn of gedurende het bouwen. 
+Geef
+aan hoe je getest heb en waarom je het op die manier gedaan hebt. Geef ook aan wat volgens
+jou de beste manier van testen is en waarom.:
+
+Om te testen van mijn code heb ik als browser Google Chrome gebruikt om mijn code debuggen. Op deze manier kan Ik de code uitvoeren zonder problemen.
+Ik denk dat dit oprecht een beste manier is van het testen van je code, want deze test-methode gaat zonder problemen door.
+
+
+
+
+
+
+

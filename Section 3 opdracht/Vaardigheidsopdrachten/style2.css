@@ -1,0 +1,37 @@
+.text-h1 {
+  color: green;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.text-h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: red;
+}
+.text-p {
+  color: blue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.text-h2-1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: purple;
+}
+.a-1,
+.a-2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.text-h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: green;
+}
+img {
+  border-radius: 50%;
+}
+.text-tijger {
+  font-size: 100px;
+}
+.last-text {
+  color: green;
+  font-size: 200px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}

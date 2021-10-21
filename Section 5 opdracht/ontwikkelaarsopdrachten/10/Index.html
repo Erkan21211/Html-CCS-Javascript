@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <img class="img1" src="tijgers.png" />
+  <body>
+    <div class="container">
+      <h1>Contactformulier</h1>
+      <div class="line"></div>
+      <form>
+        <ul class="flex-outer">
+          <li>
+            <label for="first-name">Naam</label>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Enter your first name here"
+            />
+          </li>
+          <li>
+            <label for="last-name">Email</label>
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Enter your last name here"
+            />
+          </li>
+          <li>
+            <label for="email">Wachtwoord</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email here"
+            />
+          </li>
+          <li>
+            <label for="phone">Geslacht</label>
+            <select type="tel" id="phone">
+              <option value="Man">Man</option>
+              <option value="Vrouw">Vrouw</option>
+            </select>
+          </li>
+          <li>
+            <p>Media</p>
+            <ul class="flex-inner">
+              <li>
+                <input type="checkbox" id="twenty-to-twentynine" />
+                <label for="twenty-to-twentynine">Niewsbrief</label>
+              </li>
+              <li>
+                <input type="checkbox" id="thirty-to-thirtynine" />
+                <label for="thirty-to-thirtynine">Mailing</label>
+              </li>
+              <li>
+                <input type="checkbox" id="fourty-to-fourtynine" />
+                <label for="fourty-to-fourtynine">Post</label>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="submit">Stuur hem op</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
