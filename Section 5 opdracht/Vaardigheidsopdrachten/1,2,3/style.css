@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+.c-box {
+  width: 50%;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Mukta", sans-serif;
+  font-weight: 200;
+}
+p {
+  font-weight: 200;
+}

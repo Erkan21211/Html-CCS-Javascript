@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>opdracht</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: seagreen;
+      }
+      .img4 {
+        width: 250px;
+        height: 100px;
+        object-fit: cover;
+      }
+
+      .column {
+        display: inline-flex;
+        float: left;
+        width: 33.33%;
+        max-width: 250px;
+        max-height: 150px;
+      }
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 500px) {
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <img src="1.png" alt="" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="2.png" alt="" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="3.png" alt="" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img class="img4" src="4.png" alt="" />
+      </div>
+      <br />
+      <br />
+      </div>
+    </div>
+  </body>
+</html>

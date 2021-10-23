@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>opdracht 5</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        display: flex;
+        position: relative;
+        margin: auto;
+        width: 50%;
+      }
+      .square {
+        display: flex;
+        position: absolute;
+        background: red;
+        width: 50vh;
+        height: 25vh;
+        top: 90px;
+        white-space: unset;
+      }
+      .square2 {
+        display: flex;
+        position: absolute;
+        background: yellow;
+        width: 40vh;
+        height: 40vh;
+        top: 400px;
+        right: 500px;
+        white-space: unset;
+      }
+      .square3 {
+        display: flex;
+        position: absolute;
+        background: purple;
+        width: 10vh;
+        height: 20vh;
+        top: 700px;
+        right: 1000px;
+        white-space: unset;
+      }
+      .square4 {
+        display: flex;
+        position: absolute;
+        background: green;
+        width: 25vh;
+        height: 25vh;
+        top: 700px;
+        right: 800px;
+      }
+      @media screen and (max-width: 1000px) {
+        body {
+          background-color: royalblue;
+        }
+        .square {
+          background: green;
+        }
+        .square2 {
+          background: blue;
+        }
+        .square3 {
+          background: pink;
+        }
+        .square4 {
+          background: peru;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        body {
+          background-color: seagreen;
+        }
+        .square {
+          background: green;
+        }
+        .square2 {
+          background: blue;
+        }
+        .square3 {
+          background: pink;
+        }
+        .square4 {
+          background: peru;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="square"></div>
+      <div class="square2"></div>
+      <div class="square3"></div>
+    </div>
+    <div class="square4"></div>
+  </body>
+</html>

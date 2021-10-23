@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: darkcyan;
+      }
+      .zoom {
+        padding: 50px;
+        background-color: green;
+        transition: transform 0.5s;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+      }
+      .zoom:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <img src="full.png" />
+    </div>
+    <div class="zoom">
+      <img class="zoom" src="full.png" />
+    </div>
+  </body>
+</html>

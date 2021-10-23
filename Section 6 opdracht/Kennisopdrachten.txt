@@ -1,0 +1,23 @@
+1. Wat zijn media-queries?
+Mediaquery is een CSS-techniek die in CSS3 is geïntroduceerd.
+
+2. Geef een voorbeeld van media-queries?
+Als het browservenster 600px of kleiner is, is de achtergrondkleur lichtblauw:
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+3. Wat betekent “-webkit-background-color: red;”?
+Als het niet volledig wordt ondersteund in alle browsers die ze willen  ondersteunen dan wordt de achterground rood.
+
+4. Wat betekent “-moz-font-size: 2rem”?
+Firefox font-size wordt op 2rem gezet.
+
+5. Het testen van je werk is superbelangrijk in programmeren. Geef drie redenen waarom testen
+zo belangrijk is.
+
+1. testen laat zien hoe je code eruit zit van de buitenkant.
+2. Met testen kan je bugs opsporen en fixxen.
+3. Met testen kan bijvoorbeeld kijken of je code wel het doet.
