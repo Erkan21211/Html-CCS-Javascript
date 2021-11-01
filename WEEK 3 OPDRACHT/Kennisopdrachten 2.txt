@@ -1,0 +1,28 @@
+1. Zet onderstaande begrippen in volgorde van belangrijkheid (met betrekking tot CSS):
+a. Source Order
+b. Importance
+c. Specificity
+
+1.b 
+2.c 
+3.a
+
+
+2. Zet onderstaande begrippen in volgorde van belangrijkheid in specificity (met betrekking tot
+CSS):
+a. IDs
+b. Classes, pseudo-classes, attribute
+c. Inline styles
+d. Elements, pseudo-elements
+
+1.d - 2.b - 3.a - 4.c
+
+3. Wat is de achtergrondkleur van het div-element?
+geel
+
+4. Wat is de breedte van het div-element?
+500px
+
+5. Wat is de hoogte van het div-element?
+50px
+

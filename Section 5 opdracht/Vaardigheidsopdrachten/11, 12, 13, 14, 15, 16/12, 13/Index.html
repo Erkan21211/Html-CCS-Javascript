@@ -9,6 +9,46 @@
       body {
         background-color: darkcyan;
       }
+      .gallery {
+        display: grid;
+        grid-template-columns: (2);
+        grid-template-rows: (4);
+        grid-gap: 0px;
+      }
+
+      .gallery__img {
+        width: 50%;
+        height: 50%;
+      }
+
+      .gallery__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .gallery__item--2 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .gallery__item--3 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .gallery__item--4 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
       .zoom {
         padding: 50px;
         background-color: green;
@@ -25,11 +65,19 @@
     </style>
   </head>
   <body>
-    <div class="parent">
-      <img src="full.png" />
-    </div>
-    <div class="zoom">
-      <img class="zoom" src="full.png" />
+    <div class="gallery">
+      <figure class="gallery__item gallery__item--1">
+        <img src="1.png" class="gallery__img" alt="Image 1" />
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img src="2.png" class="gallery__img" alt="Image 2" />
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+        <img src="3.png" class="gallery__img" alt="Image 3" />
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <img src="4.png" class="gallery__img" alt="Image 4" />
+      </figure>
     </div>
   </body>
 </html>

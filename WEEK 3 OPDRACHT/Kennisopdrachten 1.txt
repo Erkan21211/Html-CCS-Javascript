@@ -1,0 +1,61 @@
+1. Leg het verschil uit tussen ‘./Images/photo1.jpg' en '../Images/photo1.jpg'.
+
+‘./Images/photo1.jpg' kijkt in wat er de map is. 
+'../Images/photo1.jpg' Als het overheen komt met deze file (Kies die).
+
+
+
+2. Wat is het referentiepunt voor een absoluut gepositioneerd element (“position: absolute”)?
+top: 10px;
+left: 10px;
+
+
+3. Wat is “@keyframes” en wat doet het? 
+De animatie wordt gemaakt door geleidelijk van de ene set CSS-stijlen naar de andere te gaan.
+
+
+4. Welke twee eigenschappen (“properties”) kan je gebruiken bij “@keyframes”? Waarom juist
+die twee?
+from {top: 0px;}
+to {top: 200px;}
+
+
+
+5. Wat is een pseudo-selector?
+Een pseudo-klasse wordt gebruikt om een ​​speciale toestand van een element te definiëren.
+
+
+
+
+
+6. Geef drie voorbeelden van een pseudo-selector.
+
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+
+
+
+7. Welke kleur heeft de link met de class ‘contact-button-main’ wanneer deze nog niet bezocht
+is?
+red
+
+8. Welke kleur heeft de link met de class ‘contact-button-main’ wanneer deze nog niet bezocht
+is?
+geen kleur (white)
+9. Wat doet de property “tekst-align”?
+De eigenschap text-align in CSS wordt gebruikt voor het uitlijnen van de innerlijke inhoud van een blokelement.
+
+10. Wat is de “active state” van een element.
+De :active pseudo-selector verandert het uiterlijk van een link terwijl deze wordt geactiveerd (aangeklikt of anderszins geactiveerd). Het wordt meestal maar een fractie van een seconde gezien en geeft visuele feedback dat er inderdaad op het element is geklikt. Het wordt meestal gebruikt voor ankerlinks (<a href="#"></a>).
