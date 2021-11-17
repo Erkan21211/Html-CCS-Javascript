@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>16</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 20px;
+      }
+      .flex-container {
+        border: 3px solid black;
+        width: 45%;
+        margin: auto;
+        height: auto;
+        vertical-align: middle;
+
+        /* flexbox */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+
+        gap: 0px;
+        row-gap: 0px;
+      }
+      .flex__child {
+        border: 2px solid green;
+        font-family: "Courier New", Courier, monospace;
+        line-height: 200px;
+      }
+
+      /* child-box */
+      .box1 {
+        background-color: yellow;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box2 {
+        background-color: red;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box3 {
+        background-color: blue;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box4 {
+        background-color: purple;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box5 {
+        background-color: yellow;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box6 {
+        background-color: red;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box7 {
+        background-color: blue;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box8 {
+        background-color: purple;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box9 {
+        background-color: yellow;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box10 {
+        background-color: red;
+        width: 150px;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      @media only screen and (max-width: 1699px) {
+        .flex-container {
+          gap: 0;
+          row-gap: 0;
+        }
+
+        .box10 {
+          flex: 1 0 200px;
+          gap: 0;
+          row-gap: 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        * {
+          order: 3;
+          width: 100%;
+        }
+        .box1 {
+          flex: 1 0 200px;
+        }
+        .box2 {
+          flex: 1 0 200px;
+        }
+        .box3 {
+          flex: 1 0 200px;
+        }
+        .box4 {
+          flex: 1 0 200px;
+        }
+        .box5 {
+          flex: 1 0 200px;
+        }
+        .box6 {
+          flex: 1 0 200px;
+        }
+        .box7 {
+          flex: 1 0 200px;
+        }
+        .box8 {
+          flex: 1 0 200px;
+        }
+        .box9 {
+          flex: 1 0 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex__child box1">1</div>
+      <div class="flex__child box2">2</div>
+      <div class="flex__child box3">3</div>
+      <div class="flex__child box4">4</div>
+      <div class="flex__child box5">5</div>
+      <div class="flex__child box6">6</div>
+      <div class="flex__child box7">7</div>
+      <div class="flex__child box8">8</div>
+      <div class="flex__child box9">9</div>
+      <div class="flex__child box10">10</div>
+    </div>
+  </body>
+</html>

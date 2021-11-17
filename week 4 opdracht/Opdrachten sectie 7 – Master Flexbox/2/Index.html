@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .flex-container {
+        background-color: greenyellow;
+        border: 3px solid blue;
+
+        /* FLEX BOX */
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .flex-item {
+        border: 2px solid black;
+        text-align: center;
+
+        /* Flexbox */
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 250px;
+        padding: 5px;
+      }
+      .home {
+        flex-grow: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item home">Home</div>
+
+      <div class="flex-item">Profile</div>
+
+      <div class="flex-item">Search</div>
+
+      <div class="flex-item">Logout</div>
+    </div>
+  </body>
+</html>
