@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1</title>
+    <title>3</title>
 
     <style>
       * {
@@ -12,25 +12,23 @@
 
       .container {
         background-color: rgb(153, 54, 54);
-        width: 10%;
-        height: 5%;
+        width: 20%;
+        height: 500px;
         margin: 20px auto;
         padding: 50px;
 
+        justify-content: center;
+
         display: grid;
-        grid-template-rows: 50px 50px 50px 50px 50px 50px;
-        grid-template-columns: 50px;
-        row-gap: none;
+        grid-template-rows: repeat(1, 500px);
+        grid-template-columns: repeat(6, 50px);
       }
 
       .item {
-        width: 200px;
-        height: 50px;
         font-size: 15px;
         text-align: center;
         box-sizing: border-box;
-        align-items: center;
-        line-height: 50px;
+        line-height: 450px;
       }
 
       .item--1 {

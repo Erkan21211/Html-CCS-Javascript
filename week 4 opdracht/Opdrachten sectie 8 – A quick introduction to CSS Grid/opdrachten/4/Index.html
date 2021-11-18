@@ -2,35 +2,34 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1</title>
+    <title>5</title>
 
     <style>
       * {
         margin: 0;
         padding: 0;
       }
-
-      .container {
+      body {
         background-color: rgb(153, 54, 54);
-        width: 10%;
-        height: 5%;
+      }
+      .container {
+        border: 2px solid black;
+        width: 600px;
         margin: 20px auto;
-        padding: 50px;
+
+        justify-content: center;
 
         display: grid;
-        grid-template-rows: 50px 50px 50px 50px 50px 50px;
-        grid-template-columns: 50px;
-        row-gap: none;
+        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(6, 100px);
       }
 
       .item {
-        width: 200px;
-        height: 50px;
         font-size: 15px;
         text-align: center;
         box-sizing: border-box;
-        align-items: center;
-        line-height: 50px;
+        line-height: 130px;
+        border: 2px solid black;
       }
 
       .item--1 {
@@ -57,6 +56,10 @@
       .item--6 {
         background-color: rgb(255, 0, 0);
       }
+
+      .item--7 {
+        background-color: rgb(159, 230, 224);
+      }
     </style>
   </head>
   <body>
@@ -67,6 +70,7 @@
       <div class="item item--4">D</div>
       <div class="item item--5">E</div>
       <div class="item item--6">F</div>
+      <div class="item item--7">G</div>
     </div>
   </body>
 </html>
