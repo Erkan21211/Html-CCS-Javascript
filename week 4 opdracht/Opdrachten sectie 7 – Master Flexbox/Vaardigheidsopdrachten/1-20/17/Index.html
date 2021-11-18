@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>17</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 20px;
+      }
+      p {
+        text-align: center;
+      }
+      .flex-container {
+        border: 3px solid black;
+        border-right: none;
+        width: 10%;
+        margin: auto;
+        height: auto;
+
+        overflow-y: hidden;
+
+        /* flexbox */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-start;
+
+        gap: 0px;
+        row-gap: 0px;
+      }
+      .flex__child {
+        border: 2px solid green;
+        font-family: "Courier New", Courier, monospace;
+        line-height: 5px;
+      }
+
+      /* child-box */
+      .box1 {
+        background-color: yellow;
+        text-align: center;
+
+        width: 100%;
+        height: 35px;
+      }
+      .box2 {
+        background-color: red;
+        width: 100%;
+        height: 35px;
+
+        flex-grow: 0.3;
+      }
+      .box3 {
+        background-color: blue;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+
+        flex-grow: 0.3;
+      }
+      .box4 {
+        background-color: purple;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box5 {
+        background-color: yellow;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box6 {
+        background-color: red;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box7 {
+        background-color: blue;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box8 {
+        background-color: purple;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box9 {
+        background-color: yellow;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        vertical-align: middle;
+
+        flex-grow: 0.3;
+      }
+      .box10 {
+        background-color: red;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      @media only screen and (max-width: 1699px) {
+        .flex-container {
+          gap: 0;
+          row-gap: 0;
+        }
+
+        .box10 {
+          flex: 1 0 200px;
+          gap: 0;
+          row-gap: 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        * {
+          order: 3;
+          width: 100%;
+        }
+        .box1 {
+          flex: 1 0 200px;
+        }
+        .box2 {
+          flex: 1 0 200px;
+        }
+        .box3 {
+          flex: 1 0 200px;
+        }
+        .box4 {
+          flex: 1 0 200px;
+        }
+        .box5 {
+          flex: 1 0 200px;
+        }
+        .box6 {
+          flex: 1 0 200px;
+        }
+        .box7 {
+          flex: 1 0 200px;
+        }
+        .box8 {
+          flex: 1 0 200px;
+        }
+        .box9 {
+          flex: 1 0 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex__child box1"><p>1</p></div>
+      <div class="flex__child box2"><p>2</p></div>
+      <div class="flex__child box3"><p>3</p></div>
+      <div class="flex__child box4"><p>4</p></div>
+      <div class="flex__child box5"><p>5</p></div>
+      <div class="flex__child box6"><p>6</p></div>
+      <div class="flex__child box7"><p>7</p></div>
+      <div class="flex__child box8"><p>8</p></div>
+      <div class="flex__child box9"><p>9</p></div>
+      <div class="flex__child box10"><p>10</p></div>
+    </div>
+  </body>
+</html>
