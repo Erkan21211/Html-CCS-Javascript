@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>4</title>
+    <title>16</title>
 
     <style>
       * {
@@ -13,30 +13,39 @@
         background-color: rgb(153, 54, 54);
       }
       .container {
+        border: 2px solid black;
         width: 600px;
         margin: 20px auto;
 
-        justify-content: center;
+        /* justify-content: center; */
 
         display: grid;
-        grid-template-rows: repeat(2, 150px);
-        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(3, 75px);
+        grid-template-columns: repeat(4, 1fr);
+
+        row-gap: 50px;
+        gap: 50px;
       }
 
       .item {
-        font-size: 15px;
+        font-size: 25px;
         text-align: center;
         box-sizing: border-box;
-        line-height: 130px;
+        line-height: 100px;
       }
 
       .item--1 {
         background-color: yellow;
         text-align: center;
+
+        grid-row-start: 4;
+        grid-row: 2 / span 7;
       }
 
       .item--2 {
         background-color: rgb(219, 164, 150);
+
+        grid-row-start: 1;
       }
 
       .item--3 {
@@ -45,6 +54,7 @@
 
       .item--4 {
         background-color: rgb(68, 0, 255);
+        grid-column: 3 / -1;
       }
 
       .item--5 {
@@ -52,11 +62,14 @@
       }
 
       .item--6 {
-        background-color: rgb(255, 0, 0);
+        background-color: rgb(6, 236, 37);
+        grid-column: 3 / -1;
       }
 
       .item--7 {
+        line-height: 500px;
         background-color: rgb(159, 230, 224);
+        grid-row: 3 / span 6;
       }
     </style>
   </head>
