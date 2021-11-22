@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>22</title>
+    <title>23</title>
 
     <style>
       * {
@@ -148,13 +148,43 @@
       /* 10 */
       .item--10 {
         background-color: purple;
-        line-height: 500px;
+        line-height: 250px;
 
         grid-row: 5 / 8;
         grid-column: 5 / span 6;
 
         grid-row-start: 5;
         grid-column-start: 5;
+      }
+
+      .item--11 {
+        background-color: rgb(43, 255, 0);
+        line-height: 50px;
+
+        grid-column: 3 / span 2;
+
+        grid-row-start: 6;
+        grid-column-start: 3;
+      }
+
+      .item--12 {
+        background-color: rgb(119, 214, 209);
+        line-height: 50px;
+
+        grid-column: 1 / span 2;
+
+        grid-row-start: 7;
+        grid-column-start: 1;
+      }
+
+      .item--13 {
+        background-color: yellow;
+        line-height: 50px;
+
+        grid-column: 3 / span 2;
+
+        grid-column-start: 3;
+        grid-row-start: 7;
       }
     </style>
   </head>
@@ -171,6 +201,9 @@
       <div class="item item--8">8</div>
       <div class="item item--9">9</div>
       <div class="item item--10">10</div>
+      <div class="item item--11">11</div>
+      <div class="item item--12">12</div>
+      <div class="item item--13">13</div>
     </div>
   </body>
 </html>
