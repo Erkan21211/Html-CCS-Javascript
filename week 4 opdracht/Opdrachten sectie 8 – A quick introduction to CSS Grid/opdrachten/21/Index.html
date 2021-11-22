@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(153, 54, 54);
+      }
+      .container {
+        border: 2px solid black;
+        width: 1000px;
+        margin: 20px auto;
+
+        /* justify-content: center; */
+
+        display: grid;
+        grid-template-rows: repeat(6, 100px);
+        grid-template-columns: repeat(6, 1fr);
+
+        justify-items: stretch;
+
+        /* row-gap: 25px;
+        gap: 25px; */
+      }
+
+      .item {
+        font-size: 25px;
+        text-align: center;
+        box-sizing: border-box;
+        line-height: 100px;
+      }
+      /* A */
+      .item--1 {
+        background-color: yellow;
+        text-align: center;
+
+        grid-row-start: 5;
+        grid-column-start: 3;
+
+        grid-row: 5 / span 6;
+      }
+      /* B */
+      .item--2 {
+        background-color: rgb(219, 164, 150);
+
+        grid-row-start: 3;
+        grid-column-start: 4;
+
+        grid-column: 4 / span 6;
+        grid-row: 3 / span 6;
+      }
+      /* C */
+      .item--3 {
+        background-color: rgb(255, 0, 0);
+        grid-row: 1 / span 2;
+
+        grid-column: 2 / span 6;
+      }
+      /* D */
+      .item--4 {
+        background-color: rgb(68, 0, 255);
+
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 2;
+
+        grid-row-start: 3;
+        grid-column-start: 1;
+      }
+      /* E */
+      .item--5 {
+        background-color: rgb(111, 0, 145);
+
+        grid-row: 1 / span 2;
+
+        grid-row-start: 1;
+        grid-column-start: 1;
+      }
+      /* F */
+      .item--6 {
+        background-color: rgb(6, 236, 37);
+
+        grid-row-start: 3;
+        grid-column-start: 3;
+
+        grid-row: 3 / span 2;
+      }
+      /* G */
+      .item--7 {
+        line-height: 100px;
+        background-color: rgb(159, 230, 224);
+
+        grid-column: 1 / span 2;
+        grid-row: 5 / span 6;
+
+        grid-column-start: 1;
+        grid-row-start: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item--1">A</div>
+      <div class="item item--2">B</div>
+      <div class="item item--3">C</div>
+      <div class="item item--4">D</div>
+      <div class="item item--5">E</div>
+      <div class="item item--6">F</div>
+      <div class="item item--7">G</div>
+    </div>
+  </body>
+</html>
