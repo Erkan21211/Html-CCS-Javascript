@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>38</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: rgb(153, 54, 54);
+      }
+
+      .grid-container {
+        border: 2px solid black;
+        width: 1000px;
+        height: 600px;
+        margin: 20px auto;
+
+        /* GRID LAYOUT */
+        display: grid;
+        grid-template-rows: repeat(4, 50px);
+        grid-template-columns: repeat(4, 50px);
+
+        grid-auto-flow: row;
+
+        justify-items: stretch;
+
+        justify-content: center;
+
+        gap: 35px;
+
+        grid-template-areas:
+          "nul one two drie"
+          "nul one two drie"
+          "vier vijf zes zeven"
+          "vier vijf zes zeven";
+      }
+      .item {
+        font-size: 25px;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 125px;
+      }
+
+      .item--0 {
+        background-color: rgb(235, 200, 226);
+
+        grid-area: nul;
+      }
+      .item--1 {
+        background-color: rgb(255, 0, 0);
+        grid-area: one;
+      }
+      .item--2 {
+        background-color: rgb(38, 0, 255);
+        grid-area: two;
+      }
+      .item--3 {
+        background-color: rgb(112, 0, 86);
+        grid-area: drie;
+      }
+      .item--4 {
+        background-color: rgb(18, 105, 1);
+        grid-area: vier;
+      }
+      .item--5 {
+        background-color: rgb(114, 194, 180);
+        grid-area: vijf;
+      }
+      .item--6 {
+        background-color: rgb(217, 255, 0);
+        grid-area: zes;
+      }
+      .item--7 {
+        background-color: rgb(235, 200, 226);
+        grid-area: zeven;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item item--0">0</div>
+      <div class="item item--1">1</div>
+      <div class="item item--2">2</div>
+      <div class="item item--3">3</div>
+      <div class="item item--4">4</div>
+      <div class="item item--5">5</div>
+      <div class="item item--6">6</div>
+      <div class="item item--7">7</div>
+    </div>
+  </body>
+</html>
