@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-sheet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(224, 170, 170);
+        }
+        header {
+            width: 100%;
+            text-align: center;
+            margin-top: 5%;
+        }
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 50px;
+            font-weight: 200;
+        }
+        h2 {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 1%;
+        }
+        .grid-container {
+            width: 1500px;
+            height: auto;
+            margin: 0 auto;
+            border-style: dashed;
+            
+            display: grid;
+            grid-template-rows: repeat(1, minmax(min-content, 80rem));
+            grid-template-columns: repeat(auto-fit, 50%);
+
+            grid-auto-flow: dense;
+
+        }
+        .left-box {
+            border-style: solid;
+            margin: 5px 5px 5px 5px;
+        }
+        .right-box {
+            border-style: solid;
+            margin: 5px 5px 5px 5px;
+        }
+        /* Left row */
+        .row-1-l {
+            text-align: center;
+            margin-top: 5%;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-2-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-3-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-4-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-5-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-6-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-7-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-8-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8; 
+        }
+        .row-9-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-10-l {
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.8; 
+        }
+        .row-11-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-12-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-13-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-14-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-15-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-16-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-17-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-18-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-19-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-20-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-21-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-22-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-23-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-24-l {
+            text-align: center;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+        .row-25-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-26-l {
+            text-align: center;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+        .row-27-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 14.70px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-28-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-29-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-30-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-31-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-32-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-33-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-34-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-35-l {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-36-l {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        /* right row */
+        .row-1-r {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-2-r {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-3-r {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-4-r {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-5-r {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-6-r {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-7-r {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-8-r {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-9-r {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-10-r {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-11-r {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-12-r {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-13-r {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-14-r {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-15-r {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-16-r {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-17-r {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-18-r {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+        .row-19-r {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(235, 34, 94);
+        }
+        .row-20-r {
+            text-align: center;
+            font-size: 15px;
+            opacity: 0.8;
+        }
+    </style>
+  </head>
+  <body>
+      <header>
+        <h1>Grid</h1>
+      </header>
+      <div class="grid-container">
+          <div class="left-box">
+              <h2>Container properties</h2>
+              <div class="row-1-l">//Create a grid</div>
+              <div class="row-2-l">display: grid || inline-grid</div>
+
+              <div class="row-3-l">//Creates grid columns</div>
+              <div class="row-4-l">grid-template-columns: length || percentage || fr || line-name</div>
+
+              <div class="row-5-l">//Creates grid rows</div>
+              <div class="row-6-l">grid-template-rows: length || percentage || fr ||line-name</div>
+
+              <div class="row-7-l">//Creates a grid with specified areas</div>
+              <div class="row-8-l">grid-template-areas: grid-area-name || none ||</div>
+
+              <div class="row-9-l">//Creates rows, columns and areas in a single declaration</div>
+              <div class="row-10-l">grid-template: none (initial values) || grid-template-rows /grid-template-columns</div>
+
+              <div class="row-11-l">//Creates spaces between grid-items on the row axis</div>
+              <div class="row-12-l">row-gap (grid-row-gap) : length</div>
+
+              <div class="row-13-l">//Creates spaces between grid-itemes on the column axis</div>
+              <div class="row-14-l">column-gap (grid-column-gap) : length</div>
+
+              <div class="row-15-l">//Creates spaces between grid-items on the row and column axis</div>
+              <div class="row-16-l">gap (grid-gap) : grid-row-gap grid-column-gap</div>
+
+              <div class="row-17-l">//Align grid items along the block / row axis</div>
+              <div class="row-18-l">justify-items: start || end || center || stretch</div>
+
+              <div class="row-19-l">//Align grid items along the block / column axis</div>
+              <div class="row-20-l">justify-items: start || end || center || stretch</div>
+
+              <div class="row-21-l">//Align grid items along the inline and block axis (shorthand)</div>
+              <div class="row-22-l">place-items: align-items / justify-items</div>
+
+              <div class="row-23-l">//Align the whole grid (container) along the inline / row axis</div>
+              <div class="row-24-l">justify-content: start || end || center || stretch || space-around || space-between || space-evenly</div>
+
+              <div class="row-25-l">//Align the whole grid (container) along the inline / block axis</div>
+              <div class="row-26-l">align-content: start || end || center || stretch || space-around || space-between || space-evenly</div>
+
+              <div class="row-27-l">//Align the whole grid (container) along the inline and block axis (shorthand)</div>
+              <div class="row-28-l">place-items: align-content / justify-content</div>
+
+              <div class="row-29-l">//Specifies the size of any auto-generated grid row</div>
+              <div class="row-30-l">grid-auto-row: size (length || percentage || fr)</div>
+
+              <div class="row-31-l">//Specifies the size of any auto-generated grid column</div>
+              <div class="row-32-l">grid-auto-columns: size (length || percentage || fr)</div>
+
+              <div class="row-33-l">//Sets the algorithm that places the grid-items</div>
+              <div class="row-34-l">grid-auto-flow: row || column || dense</div>
+
+              <div class="row-35-l">//Shorthand for almost every property</div>
+              <div class="row-36-l">grid: grid-template-rows grid-template-columns grid-template-areas grid-auto-row grid-auto-columns grid-auto-flow</div>
+          </div>
+
+          <div class="right-box">
+              <h2>Item Properties</h2>
+
+              <div class="row-1-r">//Determines the column start of an item within the grid</div>
+              <div class="row-2-r">grid-column-start: line || span (number || name)  || auto</div>
+
+              <div class="row-3-r">//Determines the row start of an item within the grid</div>
+              <div class="row-4-r">grid-row-start: line || span (number || name)  || auto</div>
+
+              <div class="row-5-r">//Determines the column end of an item within the grid</div>
+              <div class="row-6-r">grid-column-end: line || span (number || name)  || auto</div>
+
+              <div class="row-7-r">//Determines the row end of an item within the grid</div>
+              <div class="row-8-r">grid-row-end: line || span (number || name)  || auto</div>
+
+              <div class="row-9-r">//Shorthand for column start and end</div>
+              <div class="row-10-r">grid-column: grid-column-start grid-column-end</div>
+
+              <div class="row-11-r">//Shorthand for row start and end</div>
+              <div class="row-12-r">grid-row: grid-row-start grid-row-end</div>
+
+              <div class="row-13-r">//Give a grid area name to a grid item</div>
+              <div class="row-14-r">grid-area: name || row-start / column-start / row-end / column-end</div>
+
+              <div class="row-15-r">//Align a grid-item inside a cell along the row / inline axis</div>
+              <div class="row-16-r">justify-self: start || end || center || stretch </div>
+              
+              <div class="row-17-r">//Align a grid-item inside a cell along the column / block axis</div>
+              <div class="row-18-r">align-self: start || end || center || stretch </div>
+
+              <div class="row-19-r">//Aligns a grid-item inside a cell along the row / inline and column / block axis</div>
+              <div class="row-20-r">place-self: align-self justify-self</div>
+              
+
+
+          </div>
+      </div>
+  </body>
+  </body>
+</html>

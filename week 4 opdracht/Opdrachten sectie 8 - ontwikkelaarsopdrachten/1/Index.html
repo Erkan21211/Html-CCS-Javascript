@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID-SPREADSHEET</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: royalblue;
+      }
+      .grid-container {
+        border: 3px solid black;
+        margin: 50px auto;
+        max-width: 1000px;
+        border-style: dashed;
+
+        /* Grid setup */
+        display: grid;
+        grid-template-rows: repeat(2, 100px);
+        /* 25rem = 400px dus de column wordt 400px breed */
+        /* grid-template-columns: minmax(min-content, 25rem); */
+
+        /* 30rem = 480px dus de column wordt 480px breed */
+        grid-template-columns: minmax(min-content, 30rem);
+      }
+
+      .item {
+        font-size: 20px;
+      }
+
+      .item--1 {
+        background-color: forestgreen;
+      }
+
+      .item--2 {
+        background-color: firebrick;
+      }
+
+      .item--3 {
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item item--1">1</div>
+    </div>
+  </body>
+</html>

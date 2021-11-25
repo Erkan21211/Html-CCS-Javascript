@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yahtzee</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      h1 {
+        font-size: 30px;
+        font-weight: 200;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-color: green;
+      }
+
+      .game-container {
+        /* BACKGROUND */
+        background-image: url("bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* FLEXBOX */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+      }
+      .game-screen {
+        border: 3px solid black;
+      }
+      .canvas {
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-screen">
+        <h1>Yahtzee</h1>
+        <canvas class="canvas"></canvas>
+      </div>
+    </div>
+  </body>
+</html>

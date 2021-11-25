@@ -15,77 +15,190 @@
 
       .grid-container {
         border: 2px solid black;
-        width: 1000px;
-        height: 600px;
+        width: 50%;
+        height: auto;
         margin: 20px auto;
 
         /* GRID LAYOUT */
         display: grid;
-        grid-template-rows: repeat(7, 50px);
-        grid-template-columns: repeat(4, 25px);
+        grid-template-rows: repeat(7, minmax(auto-fit, max-content));
+        grid-template-columns: minmax(min-content, 1fr) repeat(6, 1fr) max-content;
 
-        grid-auto-flow: row;
-
-        gap: 35px;
-
-        grid-template-areas:
-          "nul one two drie"
-          "nul one two drie"
-          "vier vijf zes zeven"
-          "vier vijf zes zeven";
+        grid-auto-flow: dense;
       }
       .item {
-        font-size: 25px;
+        font-size: 15px;
         box-sizing: border-box;
         text-align: center;
-        line-height: 125px;
+        padding: 20px auto 10px auto;
       }
 
       .item--0 {
         background-color: rgb(235, 200, 226);
-
-        grid-area: nul;
       }
       .item--1 {
         background-color: rgb(255, 0, 0);
-        grid-area: one;
+        line-height: 300px;
+
+        grid-row-start: 1;
+        grid-column-start: 2;
+
+        grid-row: 1 / span 2;
+        grid-column: 2 / span 3;
       }
       .item--2 {
         background-color: rgb(38, 0, 255);
-        grid-area: two;
+
+        grid-row-start: 1;
+        grid-column-start: 5;
       }
       .item--3 {
         background-color: rgb(112, 0, 86);
-        grid-area: drie;
+
+        grid-column: 6 / span 2;
+
+        grid-row-start: 1;
+        grid-column-start: 6;
       }
       .item--4 {
         background-color: rgb(18, 105, 1);
-        grid-area: vier;
+
+        grid-column: 5 / span 3;
+
+        grid-row-start: 2;
+        grid-column-start: 5;
       }
       .item--5 {
         background-color: rgb(114, 194, 180);
-        grid-area: vijf;
+
+        grid-row-start: 2;
+        grid-column-start: 1;
       }
       .item--6 {
         background-color: rgb(217, 255, 0);
-        grid-area: zes;
+
+        grid-row-start: 3;
+        grid-column-start: 1;
       }
       .item--7 {
         background-color: rgb(235, 200, 226);
-        grid-area: zeven;
+
+        grid-row-start: 3;
+        grid-column-start: 2;
+      }
+      .item--8 {
+        background-color: red;
+
+        grid-column: 3 / span 3;
+        grid-row: 3 / span 2;
+
+        grid-row-start: 3;
+        grid-column-start: 3;
+      }
+      .item--9 {
+        background-color: blue;
+
+        grid-row-start: 3;
+        grid-column-start: 6;
+      }
+      .item--10 {
+        background-color: rgb(114, 194, 180);
+
+        grid-row-start: 3;
+        grid-column-start: 7;
+      }
+      .item--11 {
+        background-color: purple;
+
+        grid-column: 1 / span 2;
+
+        grid-row-start: 4;
+        grid-column-start: 1;
+      }
+      .item--12 {
+        background-color: yellow;
+
+        grid-row-start: 4;
+        grid-column-start: 6;
+      }
+      .item--13 {
+        background-color: rgb(235, 200, 226);
+
+        grid-row-start: 4;
+        grid-column-start: 7;
+      }
+      .item--14 {
+        background-color: green;
+
+        grid-column: 1 / span 4;
+
+        grid-row-start: 5;
+        grid-column-start: 1;
+      }
+      .item--15 {
+        background-color: red;
+
+        grid-column: 4 / span 2;
+        grid-row: 5 / span 2;
+
+        grid-row-start: 5;
+        grid-column-start: 5;
+      }
+      .item--16 {
+        background-color: blue;
+
+        grid-row-start: 5;
+        grid-column-start: 7;
+      }
+      .item--17 {
+        background-color: purple;
+
+        grid-column: 1 / span 3;
+
+        grid-row-start: 6;
+        grid-column-start: 1;
+      }
+      .item--18 {
+        background-color: green;
+
+        grid-column: 1 / span 4;
+
+        grid-row-start: 7;
+        grid-column-start: 1;
       }
     </style>
   </head>
   <body>
     <div class="grid-container">
-      <div class="item item--0">0</div>
+      <div class="item item--0">Even while they teach, men learn</div>
       <div class="item item--1">1</div>
-      <div class="item item--2">2</div>
+      <div class="item item--2">Man is condemned to be free</div>
       <div class="item item--3">3</div>
-      <div class="item item--4">4</div>
-      <div class="item item--5">5</div>
+      <div class="item item--4">The unexamined life is not worth living</div>
+      <div class="item item--5">
+        You can discover more about a person in an hour of play than in a year
+        of conversation
+      </div>
       <div class="item item--6">6</div>
-      <div class="item item--7">7</div>
+      <div class="item item--7">
+        Entities should not be multiplied unnescessarily
+      </div>
+      <div class="item item--8">
+        Religion is the sign of the opressed ...<br />
+        it is the opium of the people
+      </div>
+      <div class="item item--9">9</div>
+      <div class="item item--10">One cannot step twice in the same river</div>
+      <div class="item item--11">
+        He who thinks great thoughts, often makes great roors
+      </div>
+      <div class="item item--12">13</div>
+      <div class="item item--13">The only thing I twice in the same river</div>
+      <div class="item item--14">11</div>
+      <div class="item item--15">15</div>
+      <div class="item item--16">16</div>
+      <div class="item item--17">17</div>
+      <div class="item item--18">Man is the measure of all things</div>
     </div>
   </body>
 </html>
