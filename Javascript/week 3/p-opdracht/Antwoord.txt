@@ -1,0 +1,4 @@
+friends: ['Koe', 'Vos']
+console.log(objectOne.friends.length)
+
+het werkt omdat syntax klopt en hij vraag naar de length van friends.. dat is 2
