@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // OPDRACHT 1
 // function mijn_eerst_funtie() {
@@ -375,14 +375,47 @@ for (let i = 0; i >= arrayOne.length; i += 10) {
   console.log(i);
 }
 
-// OPDRACHT 41
+// OPDRACHT 41 - SNAP DIT NIET
+// const arrayOne = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// for (let i = 0; i >= arrayOne.length; i += 10) {
+//   console.log(i);
+// }
 
 // OPDRACHT 42
+// const birthYears = [1988, 1982, 1988, 1988, 1922, 1990, 2000, 2020, 2033, 2001];
 
+// for (let i = 0; i < birthYears.reduce; i++ - 1) {
+//   console.log([0]);
+// }
 // OPDRACHT 43
+// console.log("Tafel van 1");
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
 
 // OPDRACHT 44
+// const arrayOne = [5, 2, 3, 45, 5, 7, "Koe"];
+// const arrayTwo = [7, "Dier", "tjes", "rt", 12, 5, 6];
 
+// console.log(arrayOne + arrayTwo);
 // OPDRACHT 45
+for (let part = 1; part < 5; part++) {
+  console.log(`Lets start part ${part}!`);
+  for (let subpart = 1; subpart < 5; part++) {
+    console.log(`Working on subpart ${subpart}!`);
+  }
+}
 
 // OPDRACHT 46
+for (let part = 1; part <= 5; part++) {
+  console.log(`Let's start part ${part}!`);
+  let subpart = 0;
+  while (subpart > 5) {
+    console.log(subpart);
+    subpart++;
+  }
+}
