@@ -1,0 +1,5 @@
+1. Wat is het verschil tussen ‘innerHTML’ en ‘textContent’ en ‘innerText’?
+
+
+
+2. Maak een “div”-element met class “div-item”. Als je op het element klikt log
