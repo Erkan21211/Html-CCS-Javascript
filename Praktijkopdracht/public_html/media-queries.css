@@ -1,0 +1,92 @@
+@media screen and (max-width: 880px) {
+  /* welkom section */
+  .wk-text {
+    padding-left: 1rem;
+    font-size: 50px;
+  }
+
+  /* contact section */
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .links {
+    height: 200px;
+  }
+  /* section erkan  */
+  .h1-erkan {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  .box-info {
+    gap: 5rem;
+    margin-left: 10rem;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .img__erkan {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  /* welkom section */
+
+  .wk-text {
+    padding-left: 1rem;
+    font-size: 50px;
+  }
+
+  /* contact section */
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .links {
+    height: 200px;
+  }
+  /* section erkan  */
+  .h1-erkan {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .box-info {
+    gap: 15px;
+    margin-left: 16rem;
+    flex-direction: column;
+  }
+
+  .about-section {
+    display: grid;
+    width: 71vmax;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: hidden;
+
+    font-size: 1.5rem;
+    padding-top: 0.2rem;
+  }
+
+  header {
+    width: 70vmax;
+  }
+
+  .welkom-section {
+    width: 70vmax;
+  }
+
+  .Erkan-section {
+    width: 70vmax;
+  }
+
+  .contact-section {
+    width: 70vmax;
+  }
+
+  footer {
+    width: 70vmax;
+  }
+}

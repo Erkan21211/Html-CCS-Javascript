@@ -1,0 +1,297 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap");
+
+/* ---------------------------- */
+/* ---------- SETUP ------------*/
+/* ------------------------------ */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  image-rendering: optimizeSpeed;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* ---------------------------- */
+/* ---------- HEADER ------------*/
+/* ------------------------------ */
+
+header {
+  background-color: rgb(240, 93, 93);
+  display: flex;
+  width: 100%;
+  flex-basis: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 4%;
+}
+
+.links-1 li {
+  display: inline-flex;
+  position: static;
+}
+
+.links-1 li a button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+.links-1 li a button:hover {
+  background-color: rgb(0, 162, 255, 0.5);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  color: black;
+}
+
+button {
+  background-color: rgb(0, 162, 255, 1);
+  border-radius: 50px;
+  border: none;
+  padding: 15px 22px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 1.2s ease 0s;
+}
+
+.logo {
+  width: 4em;
+  cursor: pointer;
+}
+
+/* ---------------------------- */
+/* ------ CONTENT (SECTIONS) ----*/
+/* ------------------------------ */
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.welkom-section {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.37),
+      rgba(0, 0, 0, 0.37),
+      rgba(0, 0, 0, 0.37)
+    ),
+    url("./images/bg-1.jpg") no-repeat center bottom / cover;
+}
+
+.wk-text {
+  padding-bottom: 150px;
+  font-size: 85px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: gold;
+}
+
+/* ------------------------------------ */
+/* ------ Erkan Links Section  --------*/
+/* ---------------------------------- */
+.Erkan-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: rgb(0, 0, 0);
+}
+.h1-erkan {
+  width: 100%;
+  height: 5%;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 8rem;
+}
+.h2-erkan {
+  width: 100%;
+  height: 10%;
+  color: white;
+}
+
+.box-info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-left: 20rem;
+  gap: 10rem;
+}
+.box-1 {
+  text-align: center;
+}
+
+.box-2 {
+  text-align: center;
+}
+
+.box-3 {
+  text-align: center;
+}
+
+.box-4 {
+  text-align: center;
+}
+
+.img__erkan {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* ------------------------------------- */
+/* ------ about me Section  -------------*/
+/* ----------------------------------- */
+
+.about-section {
+  background-image: linear-gradient(to bottom right, red, yellow);
+  display: grid;
+
+  width: 100%;
+  height: 100%;
+
+  gap: 20rem;
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+
+  align-items: center;
+}
+
+.about_box {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about__img {
+  width: 350px;
+  height: 400px;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+/* ------------------------------------- */
+/* ------ Contact Section  -------------*/
+/* ----------------------------------- */
+
+.contact-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+}
+.contact-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, yellow, red);
+  background-size: cover;
+  z-index: -1;
+  filter: blur(50px);
+}
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.2);
+}
+.links {
+  height: 100%;
+  background: url("./images/contact-us.png") no-repeat right;
+  background-size: cover;
+}
+.rechts {
+  padding: 25px 40px;
+}
+h3 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: rgb(240, 93, 93);
+}
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.field:focus {
+  background-color: #fff;
+  border: 2px solid rgba(240, 93, 93, 0.5);
+}
+.area {
+  min-height: 150px;
+}
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: rgba(240, 93, 93);
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: 240, 93, 93, 0.5;
+}
+
+/* ------------------------------------- */
+/* ------ FOOTER Section  -------------*/
+/* ----------------------------------- */
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+h4 {
+  text-align: center;
+  width: 90%;
+}
