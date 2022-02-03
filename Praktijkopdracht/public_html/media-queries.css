@@ -1,4 +1,18 @@
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1441px) {
+  .gal__img {
+    max-width: 355px;
+    max-height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .gal__img {
+    max-width: 400px;
+    max-height: fit-content;
+  }
+}
+
+@media screen and (max-width: 954px) {
   /* welkom section */
   .wk-text {
     padding-left: 1rem;
@@ -23,16 +37,38 @@
     margin-left: 10rem;
     flex-direction: row;
   }
+
+  /* gallery section */
+  .gallery-section {
+    gap: 0;
+  }
+
+  .gal__img {
+    max-width: 350px;
+    max-height: fit-content;
+  }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 700px) {
   .img__erkan {
     height: 100px;
     width: 100px;
   }
+
+  .gal__img {
+    max-width: 250px;
+    max-height: fit-content;
+  }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 500px) {
+  .gal__img {
+    max-width: 200px;
+    max-height: fit-content;
+  }
+}
+
+@media screen and (max-width: 415px) {
   /* welkom section */
 
   .wk-text {
@@ -70,11 +106,20 @@
     padding-top: 0.2rem;
   }
 
+  .gal__img {
+    max-width: 150px;
+    max-height: fit-content;
+  }
+
   header {
     width: 70vmax;
   }
 
   .welkom-section {
+    width: 70vmax;
+  }
+
+  .gallery-section {
     width: 70vmax;
   }
 
