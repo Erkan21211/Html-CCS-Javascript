@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 35px;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.container-grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-areas:
+    "one one one"
+    "two drie vier"
+    "vijf vijf vijf";
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+  display: grid;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.center {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-item-1 {
+  grid-area: one;
+  background-color: pink;
+}
+
+.grid-item-2 {
+  grid-area: two;
+  background-color: rgb(164, 94, 211);
+}
+
+.grid-item-3 {
+  grid-area: drie;
+  background-color: rgb(150, 50, 125);
+}
+
+.grid-item-4 {
+  grid-area: vier;
+  background-color: rgb(164, 94, 211);
+}
+
+.grid-item-5 {
+  grid-area: vijf;
+  background-color: rgb(153, 0, 255);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+#text-are
+ {
+  gap: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.33s ease-out;
+  transform: scale(1.2);
+}
+
+.overlay-inner {
+  text-align: center;
+  max-width: 700px;
+}
+
+body.overlay-is-open .overlay,
+.overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+body.overlay-is-open .flexbox,
+.blurred {
+  filter: blur(4px);
+}

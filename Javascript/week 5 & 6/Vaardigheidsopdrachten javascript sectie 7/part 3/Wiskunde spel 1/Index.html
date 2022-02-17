@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Wiskunde 1</title>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div class="container-grid">
+        <div class="grid-item grid-item-1 center">
+          <h1>Score:<span class="score-num"></span></h1>
+        </div>
+        <div class="grid-item grid-item-2 center">
+          <span class="number1">number1</span>
+        </div>
+        <div class="grid-item grid-item-3 center">
+          <span class="op"></span>
+        </div>
+        <div class="grid-item grid-item-4 center">
+          <span class="number2">number2</span>
+        </div>
+
+        <div class="grid-item grid-item-5 center" id>
+          <div class="form">
+            <input type="text" class="input-field" />
+            <button type="button" id="btn">answer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay">
+      <div class="overlay-inner">
+        <p class="end-message"></p>
+        <p class="score-message"></p>
+        <button onclick="restart()" class="reset-button">Start Over</button>
+      </div>
+      <div class="points-needed"></div>
+      <div class="mistakes-allowed"></div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
