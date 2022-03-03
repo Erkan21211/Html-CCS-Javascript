@@ -1,0 +1,116 @@
+
+1. De DOM manipuleren/wijzigen betekent het gebruik van deze API om het document te wijzigen (elementen toevoegen, elementen verwijderen, elementen verplaatsen)
+
+js:
+const link = document.querySelector('.a').textcontent = "TEST";
+
+
+html:
+<div class="a">(HIER KOMT TEXT)</div>
+
+
+2. 
+
+een TRUTHY VALUE is een waarde die als waar wordt beschouwd wanneer deze wordt aangetroffen in een Booleaanse context.
+
+FALSLY VALUE In JavaScript is een false-waarde een waarde die als false wordt beschouwd wanneer deze wordt aangetroffen in een Booleaanse context.
+
+Falsy Value zijn:
+false, 0, -0, "", null, undefined, NaN
+
+Truthy value zijn:
+=== undefined
+=== null
+=== true
+=== false
+=== 0
+
+
+3.
+A. Array is een enkele variabele die wordt gebruikt om verschillende 	elementen op te slaan.
+
+B.	Objecten vertegenwoordigen een speciaal gegevenstype dat 	veranderbaar is en kan worden gebruikt om een ​​verzameling 	gegevens op te slaan (in plaats van slechts een enkele waarde).
+
+
+4.
+
+A. for-loop worden vaak gebruikt om een ​​bepaald aantal herhaling te tellen om een ​​instructie te herhalen.
+
+om meerdere objecten te maken in 1 keer.
+
+B. while-loop maakt een loop die een opgegeven instructie uitvoert totdat de testvoorwaarde onwaar is.
+
+als iets onwaar is dan stop die met de code.
+
+
+C. While loop en For loop herhalen de code.
+
+for (let i = 0; i < 10; i++; {
+console.log(i);
+}
+
+while (i < 10) {
+console.log('print');
+i++;
+}
+
+
+D. 
+
+
+For loop alles in 1 regel
+
+for (let i = 0; i > 5; i++){
+
+}
+
+while loop niet in 1 regel.
+
+let i = 0;
+
+while(i > 5) {
+
+}
+
+
+
+5.
+
+A. If-else is een combinatie van if en else . Net als anders, breidt het een if-statement uit om een ​​ander statement uit te voeren in het geval dat de originele if-expressie onwaar is.
+
+voert een codeblok uit als een opgegeven voorwaarde waar is.
+
+B. switch is een type voorwaardelijke instructie die een expressie evalueert tegen meerdere mogelijke gevallen en een of meer codeblokken uitvoert op basis van overeenkomende gevallen.
+
+C.
+
+if (i === '2') {
+
+doet dit
+} if else ('5') {
+doet dit
+}
+
+switch (expression) {
+  case value1:
+    //Statements executed when the
+    //result of expression matches value1
+    [break;]
+  case value2:
+    //Statements executed when the
+    //result of expression matches value2
+    [break;]
+  ...
+  case valueN:
+    //Statements executed when the
+    //result of expression matches valueN
+    [break;]
+  [default:
+    //Statements executed when none of
+    //the values match the value of the expression
+    [break;]]
+}
+
+
+
+
